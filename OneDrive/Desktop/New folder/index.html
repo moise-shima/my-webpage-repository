@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      header {
+        background: teal;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: 2fr 4fr 1fr;
+        height: 75vh;
+      }
+
+      main {
+        background: #21187336;
+      }
+
+      footer {
+        background: #000;
+        color: white;
+        padding: 20px;
+      }
+
+      nav > ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        justify-content: center;
+      }
+
+      nav {
+        background-color: #eee;
+        text-align: center;
+        display: flex;
+        padding: 10px;
+        justify-content: space-between;
+      }
+
+      aside,
+      main {
+        padding: 10px;
+      }
+
+      button, input {
+        padding: 4px 10px;
+        border: none;
+        border-radius: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Page header</h1>
+      <span>
+        <input
+          placeholder="type here to search..."
+          type="search"
+        />
+        <button>Search</button>
+      </span>
+    </header>
+    <nav>
+      <p>Navigation links</p>
+      <a href="#">Home</a> |
+        <a href="#">About</a>|
+        <a href="#">Services</a>|
+        <a href="#">Contact us</a>
+    </nav>
+    <div>
+      <aside>
+        <p>left sidebar</p>
+      </aside>
+      <main>
+        <p>main content</p>
+      </main>
+      <aside>
+        <p>right sidebar</p>
+        <br />
+        <ul type="square">
+          <li>Latest News</li>
+          <li>Weahter info</li>
+          <li>Cycling</li>
+          <li>Entertainment</li>
+          <li>Movies</li>
+          <li>Advertisement</li>
+        </ul>
+      </aside>
+    </div>
+    <footer>
+      <p>footer</p>
+      <p>&copy;2025 Allright reserved</p>
+    </footer>
+  </body>
+</html>
